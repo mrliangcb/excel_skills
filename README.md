@@ -25,7 +25,8 @@
 
 ### 5.LEFT()  
   LEFT(F219,FIND("号",F219&"号"))  
-
+  
+  
 ### 6.INDEX()  
   INDEX(A:A,SMALL(IF(ISNUMBER(FIND("女",$A$2:$A$100)),1000,ROW($2:$100)),ROW(A1)))&""  
 
