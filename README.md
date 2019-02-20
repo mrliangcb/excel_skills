@@ -29,15 +29,15 @@ L2:L8是要求和的数字  D2:D8是判断域  D2是判决标准  （也能写�
 ### 6.INDEX()
 =INDEX(A:A,SMALL(IF(ISNUMBER(FIND("女",$A$2:$A$100)),1000,ROW($2:$100)),ROW(A1)))&""
 
-### 7.查找这一格是否有这个字
-IF(ISNUMBER(FIND("A",A1)),"有","无")
-找A1中是否有A这个字母，有的话返回第一个值
+### 7.查找这一格是否有这个字  
+IF(ISNUMBER(FIND("A",A1)),"有","无")  
+找A1中是否有A这个字母，有的话返回第一个值  
 
-### 8.=LEFT(B2,LEN(B2)-1)
-去掉最后一个字符
+### 8.=LEFT(B2,LEN(B2)-1)  
+去掉最后一个字符  
 
-### 9.=right(A1,6)
-留下右边的6个字符
+### 9.=right(A1,6)  
+留下右边的6个字符  
 
-### 10.统计公式
-=IF(ISNUMBER(FIND("万",$J2)),LEFT($J2,LEN($J2)-1)*10000,IF(ISNUMBER(FIND("亿",$J2)),LEFT($J2,LEN($J2)-1)*100000000, $J2))
+### 10.统计公式  
+=IF(ISNUMBER(FIND("万",$J2)),LEFT($J2,LEN($J2)-1)*10000,IF(ISNUMBER(FIND("亿",$J2)),LEFT($J2,LEN($J2)-1)*100000000, $J2))  
