@@ -39,4 +39,5 @@ IF(ISNUMBER(FIND("A",A1)),"有","无")
 ### 9.=right(A1,6)
 留下右边的6个字符
 
-### 10.
+### 10.统计公式
+=IF(ISNUMBER(FIND("万",$J2)),LEFT($J2,LEN($J2)-1)*10000,IF(ISNUMBER(FIND("亿",$J2)),LEFT($J2,LEN($J2)-1)*100000000, $J2))
